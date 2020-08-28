@@ -1,0 +1,89 @@
+.content{
+	padding: 2em 0;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img{
+	width:100%
+}
+.feedHead{
+	width: 100%;
+	text-align: center;
+}
+.tabList {
+	padding: .25em;
+}
+.vidTab, .newsTab {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 33% 33% 33%;
+}
+@media all and (max-width: 800px) {
+	.feeds {
+		grid-template-columns: 1fr;
+	}
+}
+.feedColumn, .nonFeed{
+	padding: 0 1.5em;
+	border: 1px solid black;
+}
+
+.feedColumn {
+	display: none;
+}
+
+.buttonWrap {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	position: relative;
+	bottom: -1px;
+}
+
+#news {
+	display: block;
+}
+.post{
+	padding: 2em 1em 2em 1em;
+}
+.feedTitle:link {
+	text-decoration: none;
+}
+.feedLink{
+	text-align: right;
+	padding-top: 1em;
+	font-weight: 600;
+}
+.feedLink a:link{
+	text-decoration: none;
+}
+.articleDate {
+	font-style: italic;
+	font-size: .8em;
+}
+.artLinkWrap {
+	padding-top: .25em;
+}
+.articleLink:link {
+	
+	text-decoration: none;
+	font-style: italic;
+}
+.nonFeed{}
+.linkItem{
+	font-size: 1.5em;
+	padding-bottom: 1em;
+}
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1.5em;
+	overflow-wrap: break-word;
+}
+h3 {
+	font-size: 1em;
+	margin: 0;
+	line-height: 1.2em;
+}
