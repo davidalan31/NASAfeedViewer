@@ -129,8 +129,8 @@
             //builds out the news feed item HTML
             $mediaVal = '<img src="' . $media . '"/>';
             echo "<div class='postImg'>";
-            if ($media !== NULL){
-              echo "<a class='articleLink' target='_blank' href=" . $link . ">" . $mediaVal . "</a>";
+            if ($media !== null) {
+                echo "<a class='articleLink' target='_blank' href=" . $link . ">" . $mediaVal . "</a>";
             }
             echo "</div>";
             echo implode(' ', array_slice(explode(' ', $description), 0, 80)) . "..." . "<br/>";
